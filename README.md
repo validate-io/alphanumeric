@@ -17,18 +17,34 @@ For use in the browser, use [browserify](https://github.com/substack/node-browse
 ## Usage
 
 ``` javascript
-var foo = require( 'validate.io-alphanumeric' );
+var isAlphaNumeric = require( 'validate.io-alphanumeric' );
 ```
 
-#### foo( value )
+#### isAlphaNumeric( value )
 
-What does this function do?
+Validates if a `value` is an alphanumeric `string`.
+
+``` javascript
+var value = 'b1e2e3p';
+
+var bool = isAlphaNumeric( value );
+// returns true
+```
 
 
 ## Examples
 
 ``` javascript
-var foo = require( 'validate.io-alphanumeric' );
+var isAlphaNumeric = require( 'validate.io-alphanumeric' );
+
+console.log( isAlphaNumeric( 'b1e2e3p' ) );
+// returns true
+
+console.log( isAlphaNumeric( '' ) );
+// returns false
+
+console.log( isAlphaNumeric( 1 ) );
+// returns false
 ```
 
 To run the example code from the top-level application directory,

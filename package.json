@@ -26,12 +26,19 @@
     "validate.io",
     "validate",
     "validation",
-    "validator"
+    "validator",
+    "valid",
+    "string",
+    "alphanumeric",
+    "is",
+    "isalphanumeric"
   ],
   "bugs": {
     "url": "https://github.com/validate-io/alphanumeric/issues"
   },
-  "dependencies": {},
+  "dependencies": {
+    "validate.io-string": "^1.0.2"
+  },
   "devDependencies": {
     "chai": "1.x.x",
     "mocha": "1.x.x",
